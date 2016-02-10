@@ -86,7 +86,7 @@ int main(int argc, char **argv) {
                                 set_fan_state(ON);
                         }
 
-                        if (cpu_temp <= 35 && fan_state == ON) {
+                        if (cpu_temp < 30 && fan_state == ON) {
                                 set_fan_state(OFF);
                         }
                 }
